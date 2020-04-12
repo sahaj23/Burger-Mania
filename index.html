@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Burger Mania</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="container">
+        <form id="form" action="html/burgers.html">
+          <legend style="color: white; font-size: xx-large;">Order now</legend>
+          <br />
+          <div class="form-group">
+            <label for="">Mobile Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="mobile"
+              placeholder="Enter a valid 10 digit mobile number"
+              pattern="[789][0-9]{9}"
+              maxlength="10"
+              style="text-align: center;"
+              oninvalid="this.setCustomValidity('Please enter a valid 10 digit mobile number')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <button type="submit" id="login" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

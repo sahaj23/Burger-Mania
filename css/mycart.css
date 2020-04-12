@@ -1,0 +1,41 @@
+#table {
+  width: 50%;
+  height: 50%;
+  margin-top: 40px;
+  text-align: center;
+}
+#heading {
+  text-align: center;
+  margin-top: 60px;
+}
+table.table td a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  min-width: 24px;
+}
+table.table td a.delete {
+  color: #e34724;
+}
+#summary {
+  text-align: center;
+  margin-top: 20px;
+}
+button.btn {
+  text-align: center;
+}
+.wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+.infoDiv {
+  margin-top: 150px;
+  text-align: center;
+}
+.table {
+  width: 400px;
+}
+#tb {
+  width: 400px;
+  margin-left: 450px;
+}

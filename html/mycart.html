@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/mycart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.16.0/bootstrap-table.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
+  </head>
+  <body>
+      <div class="outer">
+    <h1 id="heading"">My Cart Details</h1>
+    <table class="table" align="center" id="table">
+      <thead class="thead-light">
+        <tr>
+          <th data-field="type">Burger Type</th>
+          <th data-field="category">Burger Category</th>
+          <th data-field="price">Price</th>
+          <th data-field="quantity">Quantity</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+    </table>
+    <div id="summary">
+    <h3><b>Summary</b></h3>
+    <h4>Total quantity: <span id="totalQty"></span></h4>
+    <h4>Total amount: <span id="totalAmt"></span></h4>
+</div>
+    <div class="wrapper">
+    <button type="button" class="btn btn-primary" id='placeOrderBtn'  onclick="placeOrder()">Place order</button>
+    </div>
+    <div>
+
+    </div>
+      </div>
+      <div class="infoDiv">
+          
+      </div>
+    <script src="../script/mycart.js"></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

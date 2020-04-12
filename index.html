@@ -14,29 +14,33 @@
   </head>
   <body>
     <div class="bg">
-      <div class="container">
-        <form id="form" action="html/burgers.html">
-          <legend style="color: white; font-size: xx-large;">Order now</legend>
-          <br />
-          <div class="form-group">
-            <label for="">Mobile Number</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="mobile"
-              placeholder="Enter a valid 10 digit mobile number"
-              pattern="[789][0-9]{9}"
-              maxlength="10"
-              style="text-align: center;"
-              oninvalid="this.setCustomValidity('Please enter a valid 10 digit mobile number')"
-              oninput="this.setCustomValidity('')"
-            />
-          </div>
+      <div class="container-fluid">
+        <section class="col-12 col-sm-6 col-md-3 col-lg-12">
+          <form id="form" class="form-container" action="html/burgers.html">
+            <legend style="color: white; font-size: xx-large;">
+              Order now
+            </legend>
+            <br />
+            <div class="form-group">
+              <label for="">Mobile Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="mobile"
+                placeholder="Enter a valid 10 digit mobile number"
+                pattern="[789][0-9]{9}"
+                maxlength="10"
+                style="text-align: center;"
+                oninvalid="this.setCustomValidity('Please enter a valid 10 digit mobile number')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
 
-          <button type="submit" id="login" class="btn btn-primary">
-            Submit
-          </button>
-        </form>
+            <button type="submit" id="login" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </section>
       </div>
     </div>
   </body>
